@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /* Updates default font-size to 10px while not overriding browser accessibility features */
+  letter-spacing: 1px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+  scroll-padding-top: 100px; /* height of the navbar */
+  margin: 0;
+  height: 100%;
+  letter-spacing: 3px;
+  width: 100vw;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- header section ---- */
+
+header {
+  font-size: 8rem;
+  
+  font-weight: 900;
+  top: 0;
+  z-index: 10;
+  position: sticky;
+  text-shadow: 
+    0 0 18px rgba(255,20,147,1),
+    0 0 40px rgba(255,20,147,1),
+    0 0 80px rgba(255,20,147,0.9),
+    0 0 130px rgba(255,20,147,0.7),
+    0 0 200px rgba(255,20,147,0.45);
+  border-bottom: 2px solid deeppink;
+  background-color: black;;
+}
+
+.turntoima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: black;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.turntoima p {
+  font-size: 8rem;
+  letter-spacing: 3.5rem;
+  max-width: 90vw;
+  font-size: clamp(5rem, 5vw, 10rem);
+  letter-spacing: clamp(0.6rem, 1.5vw, 3.5rem);
+}
+
+.game-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 100;
+  gap: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  text-shadow: none;
+/*   box-shadow:
+    0 0 10px rgba(255,20,147,0.7),
+    0 0 20px rgba(255,20,147,0.6),
+    0 0 40px rgba(255,20,147,0.4); */
+}
+
+.game-counter {
+  padding: 5px;
+  border-radius: 10px;
+  color: pink;
+  letter-spacing: 15px;
+  font-size: 4rem;
+  font-weight: 100;
+  text-shadow:
+    0 0 10px rgba(255,20,147,0.7),
+    0 0 20px rgba(255,20,147,0.6),
+    0 0 40px rgba(255,20,147,0.4);
+}
+
+.game-button {
+  background-color: hotpink;
+  color: black;
+  letter-spacing: 15px;
+  font-weight: 300;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/* ---- main section ---- */
+
+main {
+  flex: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 15px 5%;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 30px;
+  max-width: 500px;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 5px rgba(255,20,147,1),
+    0 0 10px rgba(255,20,147,1),
+    0 0 15px rgba(255,20,147,0.9);
+}
+
+.player-button {
+  background-color: black;
+  color: deeppink;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 100;
+}
+
+.player-counter {
+  padding: 10px;
+  border-radius: 10px;
+  color: pink;
+}
+
+.box.active-player {
+  border: 3px solid pink;
+  border-radius: 10px; /* optional for nicer look */
+}
+
+
+/* ---- footer section ---- */
+
+footer {
+  font-size: 3rem;
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  border-top: 2px solid deeppink;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: pink;
+  text-shadow: 
+    0 0 18px rgba(255,20,147,1),
+    0 0 40px rgba(255,20,147,1),
+    0 0 80px rgba(255,20,147,0.9),
+    0 0 130px rgba(255,20,147,0.7);
+}
+
+.footer p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
